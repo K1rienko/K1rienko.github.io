@@ -1,0 +1,27 @@
+<?php
+    try {
+        $conn = new PDO("mysql:host=localhost;dbname=user", 'root', '');
+
+        if(empty($_POST['name'])) exit("Поле имя не заполнено");
+        if(empty($_POST['phoneNumber'])) exit("Поле номер не заполнено");
+        if(empty($_POST['email'])) exit("Поле почта не заполнено");
+
+        $query = "INSERT INTO form_data VALUES (NULL , :name , :phoneNumber , :email)";
+        $msg = $conn->prepare($query);
+        $msq->execute(['name' => $_POST['name']]);
+        $msq->execute(['phoneNumber' => $_POST['phoneNumber']]);
+        $msq->execute(['email' => $_POST['email']]);
+
+        $msg_id = $conn->lastInsertId();
+
+        header("Location: index.html");
+
+// // После 2 секунд перенаправляем на index.html
+    // echo '<meta http-equiv="refresh" content="2;url=index.html">';
+    }
+
+    catch(PDOException $e) 
+    {
+        echo "error" .$e->getMessage();
+    }
+?>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersport Academy</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="http://www.sitename.com/dirname/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!------------------------------------------- HEADER ----------------------------------------->
+  <header>
+    <div class="logo">
+        <img src="images/logo.png" alt="Логотип">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!------------------------------------------- 1BLOCK ----------------------------------------->
+  <div class="d1">
+    <h1 id="napr">Наши направления</h1>
+    <div class="columns">
+      <div class="column">
+          <img src="images/cs2.png" alt="Изображение 1">
+          <p>Counter-Strike 2</p>
+      </div>
+      <div class="column">
+          <img src="images/dt2.jpg" alt="Изображение 2">
+          <p>Dota 2</p>
+      </div>
+      <div class="column">
+          <img src="images/rs.jpg" alt="Изображение 3">
+          <p>Tom Clancy's Rainbow Six Siege</p>
+      </div>
+      <div class="column">
+        <img src="images/vt.jpg" alt="Изображение 3">
+        <p>Valorant</p>
+    </div>
+  </div>
+</div>
+
+<!------------------------------------------- 2BLOCK ----------------------------------------->
+  <div class="d2">
+      <div class="columns-2">
+        <div class="column-2">
+          <div class="gif">
+            <img src="images/cs2.gif" alt="">
+          </div>
+        </div>
+        <div class="column-2">
+            <div class="description">
+                <h2>Академия киберспорта "Cybersport Academy" - инновационное образовательное учреждение, цель которого - подготовить будущих чемпионов киберспорта и вдохновить новое поколение лидеров в этой динамично развивающейся индустрии.</h2>
+                  <ul>Наши программы включают:</ul>
+                    <li>Обширные курсы по различным киберспортивным дисциплинам, позволяющие развивать таланты игроков на всех уровнях мастерства.</li>
+                    <li>Центр обучения и сертификации киберспортивных судей, тренеров и менеджеров для того, чтобы создавать качественные команды и события.</li>
+                  <ul>Преимущества обучения в "Cybersport Academy":</ul>
+                    <li>Гибкие форматы обучения - мы предлагаем как онлайн, так и офлайн курсы, чтобы каждый студент мог выбрать подходящий ему формат обучения.</li>
+                    <li>Персональный подход - каждый ученик получает индивидуальное внимание и поддержку от наших профессионалов.</li>
+                    <li>Участие в турнирах - мы сотрудничаем с крупнейшими организаторами турниров, предоставляя уникальную возможность принимать участие в соревнованиях.</li>
+                    <li>Трудоустройство - успешные студенты имеют шанс попасть в составы киберспортивных команд региона СНГ, начать свою карьеру в индустрии киберспорта.</li>
+            </div>
+        </div>
+      </div>
+  </div>
+
+  <!------------------------------------------- 3BLOCK ----------------------------------------->
+  <h2 id="info">Ознакомительная информация</h2>
+  <div class="table">
+    <div class="d4">
+      <iframe width="700" height="325" src="https://www.youtube.com/embed/-3VwzppszXk?si=lMI9xS5hNLYgvNUq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div> 
+    <div class="d3">
+      <h3>Оставьте заявку</h3>
+      <form form action="back.php" method="post">
+        <input type="text" name="name" id="name" placeholder="Имя">
+        <input type="tel" name="phoneNumber"id="phoneNumber" placeholder="Номер телефона">
+        <input type="email" name="email" id="email" placeholder="Электронная почта">
+        <input type="submit" class="btn" value="Подписаться">
+      </form>
+    </div>
+</div> 
+
+<button class="but" onclick="showPopup()">Подробная информация</button>       
+
+<div id="popup">
+    <p>Это простое всплывающее окно</p>
+    <button class = "but2" onclick="hidePopup()">Закрыть</button>
+</div>
+
+  <!-- ----------------------------------------- FOOTER ----------------------------------------->
+  <footer>
+    <div class="logofooter">
+      <img id= "lg" src="images/logo.png" alt="">
+      <div class="social-icons">
+        <a href="https://vk.com/k1rienko"><img src="images/vkontakte.png" alt=""></a>
+        <a href="https://www.tiktok.com/@k1rienko"><img src="images/tiktok-2.png" alt=""></a>
+        <a href="https://www.instagram.com/k1rienko_/"><img src="images/instagram.png" alt=""></a>
+        <a href="https://web.telegram.org/a/"><img src="images/telegram.png" alt=""></a>
+      </div>
+      <p>© 2023 Cybersport Academy</p>
+    </div>
+
+    <div class="us" >
+      <h2>О Нас</h2>
+      <p>Новости</p>
+      <p>Академия</p>
+      <p>Киберарена</p>
+      <p>Цены</p>
+      <p>Магазин</p>
+      <p>Миссия и ценности</p>
+    </div>
+
+    <div class="education">
+      <h2>Образование</h2>
+      <p>Образовательная программа</p>
+      <p>Мнение экспертов</p>
+    </div>
+
+    <div class="partners">
+      <h2>Партнёрам</h2>
+      <p>Руководство</p>
+      <p>Сотрудничество</p>
+    </div>
+  </footer>
+
+  <!-- ----------------------------------------- CHATBUTTON ----------------------------------------->
+  <button class="chatbot-toggler">
+    <span class="material-symbols-rounded">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <div class="chatbot">
+    <div class="ch">
+      <h2>ЧатБот</h2>
+      <span class="close-btn material-symbols-outlined">close</span>
+    </div>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">smart_toy</span>
+        <p>Привет! 👋<br>Как я могу вам помочь?</p>
+      </li>
+    </ul>
+    <div class="chat-input">
+      <!-- <form id="contactForm" action="chat.php" method="post"> -->
+      <textarea placeholder="Введите сообщение..." spellcheck="false" required></textarea>
+      <!-- <input type="submit" value="отправить"> -->
+      <span id="send-btn" class="material-symbols-rounded">send</span>
+    <!-- </form> -->
+    </div>
+  </div>
+
+</body>
+</html>
